@@ -4,9 +4,12 @@ public class Student {
   private String id;
   private String name;
 
-  public Student(String id, String name) {
+  private String className;
+
+  public Student(String id, String name, String className) {
     this.setId(id);
     this.setName(name);
+    this.setClassName(className);
   }
 
   public String getName() {
@@ -25,5 +28,12 @@ public class Student {
     this.id = id;
   }
 
+  public String getClassName() {
+    return className;
+  }
+
+  public void setClassName(String className) {
+    this.className = className;
+  }
 
 }
